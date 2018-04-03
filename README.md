@@ -28,19 +28,10 @@ First, install all dependencies using running [NPM](https://www.npmjs.com/) from
 npm install
 ```
 
-And install driver for browsers
-
-```
-#!bash
-
-node node_modules/protractor/bin/webdriver-manager update
-
-```
-
 
 ### Running tests ###
 
-Run the following command from project root (e2e) with path to **.js** config file
+Run the following command from project root with path to **.js** config file
 
 ```
 #!bash
@@ -49,6 +40,17 @@ npm test target/config/sample.config.js -- --suite=<your suite name>
 
 #to run single test
 npm test target/config/sample.config.js -- --mochaOpts.grep="<test name>"
+```
+
+
+### Running report ###
+
+Run the following command from project root
+
+```
+#!bash
+npm run report
+
 ```
 
 
