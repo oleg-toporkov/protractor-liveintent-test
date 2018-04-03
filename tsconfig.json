@@ -1,13 +1,19 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true,
+    //"allowJs": true, //uncomment if need just copy some source
+    "target": "es6",
     "skipLibCheck": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "declaration": false,
+    "noImplicitAny": false,
     "outDir": "target",
-    "moduleResolution": "node"
+    "types": ["node", "mocha", "chai"]
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "typings",
+    "plugins.ts"
   ]
 }

@@ -1,5 +1,5 @@
-import {LoginPage} from '../../pages/loginPage'
-import {browser} from "protractor";
+import { LoginPage } from '../../pages/loginPage'
+import { browser } from 'protractor';
 let expect = require('chai').expect;
 
 describe('login', () => {

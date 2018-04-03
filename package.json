@@ -2,18 +2,23 @@
   "name": "protractor-liveintent-test",
   "version": "0.0.1",
   "scripts": {
-    "clean": "rm -rf ./target",
+    "clean": "rm -rf ./allure-results && rm -rf ./allure-report && rm -rf ./target && rm -f xunit_result-*.xml && rm -f xunit_result.xml && rm -f browser-*.log",
+    "getDrivers": "node node_modules/protractor/bin/webdriver-manager update",
     "tsc": "tsc",
-    "pretes": "npm run clean && npm run tsc",
-    "test": "protractor"
+    "pretest": "npm run clean && npm run getDrivers && npm run tsc",
+    "test": "protractor",
+    "report": "allure generate allure-results -o allure-report && allure report open -o allure-report"
   },
   "dependencies": {
     "@types/chai": "4.1.2",
     "@types/mocha": "5.0.0",
     "@types/node": "9.6.1",
-    "@types/selenium-webdriver": "3.0.8",
+    "@types/selenium-webdriver": "2.53.39",
+    "allure-commandline": "2.5.0",
     "chai": "4.1.2",
-    "mocha": "5.0.5",
+    "mocha": "3.3.0",
+    "mocha-allure-reporter": "1.3.2",
+    "mocha-multi": "1.0.1",
     "protractor": "5.3.0",
     "typescript": "2.8.1"
   }

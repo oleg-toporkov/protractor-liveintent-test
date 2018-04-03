@@ -1,4 +1,4 @@
-import {LoginPageElements} from 'elements/loginPageElements'
+import {LoginPageElements} from './elements/loginPageElements'
 import {promise as wdpromise} from 'selenium-webdriver';
 
 import {browser} from "protractor";
