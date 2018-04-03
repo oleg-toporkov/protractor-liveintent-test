@@ -55,11 +55,11 @@ npm test target/config/sample.config.js -- --mochaOpts.grep="<test name>"
 ### Framework layout ###
 
 protractor-liveintent-test/
-```├── config``` - - - - - - - - - config files with different environments/suites/browsers
-```├── extensions``` - - - - - - - - - browser extension files (*adblokers for now*)
-```├── helpers``` - - - - - - - - - files with helper functions (file read/write/convert, reporting etc)
-```├── pages``` - - - - - - - - - single page or area representations ([Page Object Pattern](http://docs.seleniumhq.org/docs/06_test_design_considerations.jsp#page-object-design-pattern))
-```│   ├── elements``` - - - - - - - - - folders for single page/area web elements and their locators
-```├── specs``` - - - - - - - - - folder for test script files
-```│   ├── trackers``` - - - - - - - - - test scripts related to stage/prod monitoring story
-```└── steps``` - - - - - - - - - step files with user action than assertion wrapped with reporting (some sort of [BDD](https://en.wikipedia.org/wiki/Behavior-driven_development))
+```├── config``` - - - - - - - - - config files with different environments/suites/browsers<br />
+```├── extensions``` - - - - - - - - - browser extension files (*adblokers for now*)<br />
+```├── helpers``` - - - - - - - - - files with helper functions (file read/write/convert, reporting etc)<br />
+```├── pages``` - - - - - - - - - single page or area representations ([Page Object Pattern]<br />(http://docs.seleniumhq.org/docs/06_test_design_considerations.jsp#page-object-design-pattern))<br />
+```│   ├── elements``` - - - - - - - - - folders for single page/area web elements and their locators<br />
+```├── specs``` - - - - - - - - - folder for test script files<br />
+```│   ├── trackers``` - - - - - - - - - test scripts related to stage/prod monitoring story<br />
+```└── steps``` - - - - - - - - - step files with user action than assertion wrapped with reporting (some sort of [BDD](https://en.wikipedia.org/wiki/Behavior-driven_development))<br />
